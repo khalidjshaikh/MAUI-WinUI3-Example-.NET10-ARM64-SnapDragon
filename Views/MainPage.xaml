@@ -8,31 +8,65 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Content>
-        <StackPanel
-            HorizontalAlignment="Center"
-            Spacing="25"
-            VerticalAlignment="Center">
-            <TextBlock
-                FontSize="24"
+        <Grid RowDefinitions="Auto,*">
+            <MenuBar Grid.Row="0">
+                <MenuBarItem Title="File">
+                    <MenuFlyoutItem Text="谢谢" />
+                    <MenuFlyoutItem Text="a" />
+                    <MenuFlyoutItem Text="b" />
+                    <MenuFlyoutItem Text="c" />
+                    <MenuFlyoutItem Text="d" />
+                    <MenuFlyoutItem Text="e" />
+                    <MenuFlyoutItem Text="f" />
+                    <MenuFlyoutItem Text="g" />
+                    <MenuFlyoutItem Text="h" />
+                    <MenuFlyoutItem Text="i" />
+                    <MenuFlyoutItem Text="j" />
+                    <MenuFlyoutItem Text="k" />
+                    <MenuFlyoutItem Text="l" />
+                    <MenuFlyoutItem Text="m" />
+                    <MenuFlyoutItem Text="n" />
+                    <MenuFlyoutItem Text="o" />
+                    <MenuFlyoutItem Text="p" />
+                    <MenuFlyoutItem Text="q" />
+                    <MenuFlyoutItem Text="r" />
+                    <MenuFlyoutItem Text="s" />
+                    <MenuFlyoutItem Text="t" />
+                    <MenuFlyoutItem Text="u" />
+                    <MenuFlyoutItem Text="v" />
+                    <MenuFlyoutItem Text="w" />
+                    <MenuFlyoutItem Text="x" />
+                    <MenuFlyoutItem Text="y" />
+                    <MenuFlyoutItem Text="z" />
+                </MenuBarItem>
+            </MenuBar>
+            <StackPanel
+                Grid.Row="1"
                 HorizontalAlignment="Center"
-                Style="{StaticResource MyLabel}"
-                Text="Hello, World!" />
-            <TextBlock
-                FontSize="20"
-                HorizontalAlignment="Center"
-                Style="{StaticResource MyLabel}"
-                Text="Welcome to WinUI 3!" />
-            <TextBlock
-                x:Name="txtCount"
-                FontSize="16"
-                HorizontalAlignment="Center"
-                Style="{StaticResource MyLabel}"
-                Text="Current count: 0" />
-            <Button
-                Click="OnCountClicked"
-                Content="Click Me"
-                HorizontalAlignment="Center"
-                Style="{StaticResource PrimaryAction}" />
-        </StackPanel>
+                Spacing="25"
+                VerticalAlignment="Center">
+                <TextBlock
+                    FontSize="24"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource MyLabel}"
+                    Text="Hello, World!" />
+                <TextBlock
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource MyLabel}"
+                    Text="Welcome to WinUI 3!" />
+                <TextBlock
+                    x:Name="txtCount"
+                    FontSize="16"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource MyLabel}"
+                    Text="Current count: 0" />
+                <Button
+                    Click="OnCountClicked"
+                    Content="Click Me"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource PrimaryAction}" />
+            </StackPanel>
+        </Grid>
     </Page.Content>
 </Page>
